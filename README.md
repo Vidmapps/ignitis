@@ -1,6 +1,6 @@
 # Ignitis pick a plan wareframe
 
-Desktop view             |  Mobile iew
+Desktop view             |  Mobile view
 :-------------------------:|:-------------------------:
 ![image](https://user-images.githubusercontent.com/58663418/183295377-08d63174-18e4-4f23-8e6c-944931360499.png)|![image](https://user-images.githubusercontent.com/58663418/183295422-2328d56e-7679-4ecf-b6d9-22fa35b2891e.png)
 
