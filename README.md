@@ -16,6 +16,7 @@ Based on the design sketches, developed a mini-webpage-wareframe for picking the
 - If two zones plan picked, you can use `progress bar` to select the distribution.
 - There are some `fields of the input` to add average monthly fees/usage from previous months and pick the type of fee/usage.
 - After the `submit button` is clicked it picked the best plan based on the previous selected and added data (real calculations TBA, for now it picks the first plan by default).
+- If the best plan was picked before, it is shown even after the page refresh.
 
 
 ### In progress
