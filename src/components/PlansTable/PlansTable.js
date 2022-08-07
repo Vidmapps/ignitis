@@ -13,11 +13,16 @@ const PlansTable = (props) => {
   const [recommendedPlan, setRecommendedPlan] = useState("");
 
   useEffect(() => {
+    localStorage.getItem("ignitis-picked-plan") !== "" &&
+      !recommendedPlan &&
+      setRecommendedPlan(localStorage.getItem("ignitis-picked-plan"));
+
     if (props.recPlan) {
       setRecommendedPlan(props.recPlan);
-      setActiveTab(props.recPlan);
+      localStorage.setItem("ignitis-picked-plan", props.recPlan);
     }
-  }, [props.recPlan]);
+  }, [props.recPlan, recommendedPlan]);
+  console.log(recommendedPlan);
 
   const showTabHandler = (planId) => {
     setActiveTab(planId);
