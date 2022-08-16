@@ -22,7 +22,6 @@ const PlansTable = (props) => {
       localStorage.setItem("ignitis-picked-plan", props.recPlan);
     }
   }, [props.recPlan, recommendedPlan]);
-  console.log(recommendedPlan);
 
   const showTabHandler = (planId) => {
     setActiveTab(planId);
@@ -89,7 +88,7 @@ const PlansTable = (props) => {
       ))}
       <div className={styles.tableCell}></div>
       {PlansContent.map((plan) => (
-        <ButtonSelectPlan id={plan.id} activeTab={activeTab} />
+        <ButtonSelectPlan key={plan.id} id={plan.id} activeTab={activeTab} />
       ))}
     </div>
   );
