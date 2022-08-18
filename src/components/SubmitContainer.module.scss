@@ -1,0 +1,56 @@
+@import "../variables";
+@import "../mixins";
+@import "../extensions";
+
+.containter {
+  @include display-flex();
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  @include space-between();
+}
+
+.inputContainer {
+  @include display-flex();
+  @include media-max-width() {
+    padding: 0px 0 $spacing * 6;
+  }
+}
+
+.descriptionInput {
+  padding-right: $spacing * 2;
+  @include fit-content();
+}
+
+.inputNumber {
+  border-radius: 4px;
+  border: 1px solid $secondary-color;
+  height: 36px;
+  width: 83px;
+  margin-top: $spacing * 2;
+}
+
+.inputType {
+  border-radius: 4px;
+  border: 1px solid $secondary-color;
+  height: 40px;
+  width: $main-width * 2;
+  margin-top: $spacing * 2;
+  padding-left: $spacing * 2;
+}
+
+.inputButton {
+  border-radius: 4px;
+  height: 40px;
+  width: $main-width * 2;
+  background-color: $main-color;
+  color: #fff;
+  border: none;
+  @include media-max-width() {
+    width: $main-width * 3;
+  }
+}
+
+.button {
+  @include display-flex();
+  @include column-reverse();
+}

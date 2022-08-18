@@ -1,0 +1,10 @@
+@import "../variables";
+@import "../mixins";
+@import "../extensions";
+
+.container {
+  width: $main-width * 6;
+  @include media-max-width() {
+    width: $main-width * 3;
+  }
+}

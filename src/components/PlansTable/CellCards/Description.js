@@ -1,6 +1,6 @@
 import { Fragment } from "react";
 import Recommended from "./Recommended";
-import styles from "../PlansTable.module.css";
+import styles from "../PlansTable.module.scss";
 
 const Description = (props) => {
   const showTab = (planId) => {

@@ -1,5 +1,5 @@
 import { Fragment } from "react";
-import styles from "../PlansTable.module.css";
+import styles from "../PlansTable.module.scss";
 
 const ButtonSelectPlan = (props) => {
   const link =

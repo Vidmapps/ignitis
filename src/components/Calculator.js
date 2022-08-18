@@ -2,7 +2,7 @@ import { useState } from "react";
 import DayNightProgressBar from "./DayNightProgressBar";
 import SubmitContainer from "./SubmitContainer";
 import TimeZoneSwitch from "./TimeZoneSwitch";
-import styles from "./Calculator.module.css";
+import styles from "./Calculator.module.scss";
 
 const Calculator = (props) => {
   const [showProgressBar, setShowProgressBar] = useState(false);

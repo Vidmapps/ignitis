@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "./SubmitContainer.module.css";
+import styles from "./SubmitContainer.module.scss";
 
 const SubmitContainer = (props) => {
   return (
@@ -8,7 +8,7 @@ const SubmitContainer = (props) => {
         <div className={styles.descriptionInput}>
           <label className="secondaryTextStyle">Kiekis</label>
           <input
-            className={styles.inputNumber}
+            className={`${styles.inputNumber} bold`}
             defaultValue="100.00"
             type="number"
           ></input>

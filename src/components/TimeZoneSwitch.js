@@ -1,5 +1,5 @@
 import { useState } from "react";
-import styles from "./TimeZoneSwitch.module.css";
+import styles from "./TimeZoneSwitch.module.scss";
 import iconInfo from "../assets/iconInfo.svg";
 
 const TimeZoneSwitch = (props) => {

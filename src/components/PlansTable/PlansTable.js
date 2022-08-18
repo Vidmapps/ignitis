@@ -6,7 +6,7 @@ import PredictedFee from "./CellCards/PredictedFee";
 import PriceZones from "./CellCards/PriceZones";
 import Label from "./CellCards/Label";
 import ButtonSelectPlan from "./CellCards/ButtonSelectPlan";
-import styles from "./PlansTable.module.css";
+import styles from "./PlansTable.module.scss";
 
 const PlansTable = (props) => {
   const [activeTab, setActiveTab] = useState("first");

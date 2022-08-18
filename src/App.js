@@ -1,5 +1,5 @@
 import { useState } from "react";
-import styles from "./App.module.css";
+import styles from "./App.module.scss";
 import Calculator from "./components/Calculator";
 import PlansTable from "./components/PlansTable/PlansTable";
 

@@ -1,6 +1,6 @@
 import { useState } from "react";
 import styled from "styled-components";
-import styles from "./DayNightProgressBar.module.css";
+import styles from "./DayNightProgressBar.module.scss";
 import iconSun from "../assets/iconSun.svg";
 import iconMoon from "../assets/iconMoon.svg";
 

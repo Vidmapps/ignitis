@@ -1,0 +1,6 @@
+.oneTwoZonesPositioning {
+  padding: 16px 4px 0;
+  @include media-max-width() {
+    padding: 16px 8px 0;
+  }
+}

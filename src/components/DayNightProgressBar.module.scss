@@ -1,0 +1,18 @@
+@import "../variables";
+@import "../mixins";
+@import "../extensions";
+
+.input {
+  @include display-flex();
+  width: 100%;
+}
+
+.percentage {
+  @include display-flex();
+  @include space-between();
+  font-weight: bold;
+}
+
+.percentageValue {
+  padding: $spacing $spacing * 2 0;
+}

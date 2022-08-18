@@ -1,0 +1,107 @@
+@import "../variables";
+@import "../mixins";
+@import "../extensions";
+
+.container {
+  @include display-flex();
+  @include space-evenly();
+  width: 60%;
+  padding-bottom: 20px;
+  @include media-max-width() {
+    width: 100%;
+  }
+}
+
+.toggleSwitch {
+  position: relative;
+  width: 60px;
+  display: inline-block;
+  text-align: left;
+  top: 12px;
+  @include media-max-width() {
+    top: 20px;
+  }
+}
+
+.checkbox {
+  display: none;
+}
+
+.label {
+  display: block;
+  overflow: hidden;
+  border: 0 solid #c2c4d2;
+  border-radius: 20px;
+}
+
+.inner {
+  display: block;
+  width: 200%;
+  margin-left: -100%;
+  @include transition-all();
+  &:before,
+  &:after {
+    float: left;
+    width: 50%;
+    height: 28px;
+    padding: 0;
+    line-height: 28px;
+    color: #fff;
+    font-weight: bold;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  &:before {
+    content: "";
+    background-color: $main-color;
+    color: #fff;
+  }
+  &:after {
+    content: "";
+    background-color: #bbb;
+    color: #fff;
+  }
+}
+
+.switch {
+  display: block;
+  width: 20px;
+  margin: 4px;
+  background: #fff;
+  position: absolute;
+  top: -1px;
+  bottom: 6px;
+  right: 32px;
+  border: 0 solid #c2c4d2;
+  border-radius: 20px;
+  @include transition-all();
+  @include media-max-width() {
+    bottom: 20px;
+  }
+}
+
+.zone {
+  color: #bbb;
+  @include media-max-width() {
+    width: 75px;
+  }
+}
+
+.twoZone {
+  @include display-flex();
+  text-align: left;
+  @extend .oneTwoZonesPositioning;
+}
+
+.oneZone {
+  text-align: right;
+  @extend .oneTwoZonesPositioning;
+}
+
+.checkbox:checked + .label .inner {
+  margin-left: 0;
+}
+
+.checkbox:checked + .label .switch {
+  right: 0px;
+}

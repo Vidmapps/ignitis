@@ -1,5 +1,5 @@
 import { Fragment } from "react";
-import styles from "../PlansTable.module.css";
+import styles from "../PlansTable.module.scss";
 import iconSunYellow from "../../../assets/iconSunYellow.svg";
 import iconMoonGreen from "../../../assets/iconMoonGreen.svg";
 
