@@ -33,5 +33,6 @@ Based on the design sketches, developed a mini-webpage-wareframe for picking the
 
 ### Built With
 
-- React.js v18.2.0;
+- React.js v18.2.0
 - styled-components v5.3.5
+- sass v1.54.4"
